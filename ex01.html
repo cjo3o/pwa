@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: '양진체';
+            src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            font-family: '양진체';
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            background-color: beige;
+            height: auto;
+            width: 560px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .nav,
+        .section1,
+        .section2,
+        .footer {
+            background-color: #d9d9d9;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            align-content: center;
+        }
+
+        .nav {
+            height: 55px;
+            margin: auto;
+        }
+
+        .nav h1 {
+            display: inline;
+        }
+
+        .section1 {
+            height: auto;
+            margin: 40px auto;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .section1 img {
+            width: 150px;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .section2 {
+            height: auto;
+            padding: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: solid 2px black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th,
+        td {
+            height: 30px;
+        }
+
+        .footer {
+            height: 55px;
+            margin-top: 70px;
+            text-align: left;
+            padding-left: 20px;
+            font-size: 19px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div style="float: left; margin-left: 10px;">
+                <a href="">
+                    <h1>홈</h1>
+                </a>
+            </div>
+            <div style="float: right; margin-right: 10px;">
+                <a href="">
+                    <h1>메뉴1</h1>
+                </a>
+                <a href="">
+                    <h1>메뉴2</h1>
+                </a>
+            </div>
+        </div>
+        <div class="section1">
+            <figure style="float: left; margin-left: 50px;">
+                <img src="img1.gif" alt="">
+                <figcaption>옴뇸뇸</figcaption>
+            </figure>
+            <figure style="float: right; margin-right: 50px;">
+                <img src="img2.gif" alt="">
+                <figcaption>오모오모</figcaption>
+            </figure>
+            <p style="clear: both; padding-top: 10px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, deserunt minus! Sapiente sit
+                consequatur debitis ex, officiis odit nostrum quaerat repudiandae ad nesciunt est ea nobis quisquam
+                dolorum amet vero.
+            </p>
+        </div>
+        <div class="section2">
+            <table>
+                <caption style="margin-bottom: 10px; font-size: 24px;">
+                    테이블
+                </caption>
+                <thead>
+                    <tr>
+                        <th>제목1</th>
+                        <th>제목2</th>
+                        <th>제목3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>내용1-1</td>
+                        <td>내용1-2</td>
+                        <td>내용1-3</td>
+                    </tr>
+                    <tr>
+                        <td>내용1-1</td>
+                        <td>내용2-2</td>
+                        <td>내용2-3</td>
+                    </tr>
+                    <tr>
+                        <td>내용3-1</td>
+                        <td>내용3-2</td>
+                        <td>내용3-3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">
+            CopyRight 차진영
+        </div>
+    </div>
+</body>
+
+</html>
