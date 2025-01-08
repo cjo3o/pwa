@@ -1,0 +1,88 @@
+@font-face {
+    font-family: '양진체';
+    src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: '양진체';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 560px;
+    height: 100vh;
+    padding: 20px;
+    margin:  50px auto;
+    position: relative;
+}
+
+.nav,
+.section1,
+.footer {
+    width: 520px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.nav {
+    background-color: #d9d9d9;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 19px;
+}
+
+.menu > a > h2 {
+    display: inline;
+}
+
+.section1 {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.section1 input {
+    margin-top: 10px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+    background-color: #f2f2f2;
+}
+
+.section1 button {
+    width: 75%;
+    padding: 15px;
+    font-size: 1.5rem;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.id,
+.pw {
+    width: 75%;
+    margin: auto;
+}
+
+.pw {
+    margin-top: 60px;
+}
+
+.footer {
+    background-color: #d9d9d9;
+    padding: 10px 0 10px 20px;
+    position: absolute;
+    bottom: 20px;
+}
