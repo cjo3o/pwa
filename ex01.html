@@ -6,163 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @font-face {
-            font-family: '양진체';
-            src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        * {
-            font-family: '양진체';
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            color: black;
-        }
-
-        .container {
-            background-color: beige;
-            height: auto;
-            width: 560px;
-            margin: 50px auto;
+        select {
+            width: 100px;
+            background-color: rgb(236, 236, 236);
+            overflow-y: hidden;
             text-align: center;
-            padding: 20px;
-        }
-
-        .nav,
-        .section1,
-        .section2,
-        .footer {
-            background-color: #d9d9d9;
-            width: 500px;
-            margin: auto;
-            border-radius: 10px;
-            align-content: center;
-        }
-
-        .nav {
-            height: 55px;
-            margin: auto;
-        }
-
-        .nav h2 {
-            display: inline;
-        }
-
-        .section1 {
-            height: auto;
-            margin: 40px auto;
-            padding: 20px;
-            overflow: hidden;
-        }
-
-        .section1 img {
-            width: 150px;
-            height: 200px;
-            border-radius: 10px;
-        }
-
-        .section2 {
-            height: auto;
-            padding: 20px;
-        }
-
-        table,
-        th,
-        td {
-            border: solid 2px black;
-            border-collapse: collapse;
-        }
-
-        table {
-            width: 100%;
-        }
-
-        th,
-        td {
-            height: 30px;
-        }
-
-        .footer {
-            height: 55px;
-            margin-top: 70px;
-            text-align: left;
-            padding-left: 20px;
-            font-size: 19px;
-            font-weight: bold;
+            height: 60px;
+            cursor: pointer;
         }
     </style>
+    <script>
+        function aaa() {
+            console.log("출력됩니다.");
+            alert(parseInt(document.getElementById("num1").value) + parseInt(document.getElementById("num2").value));
+        }
+    </script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="nav">
-            <div style="float: left; margin-left: 10px;">
-                <a href="">
-                    <h2>홈</h2>
-                </a>
-            </div>
-            <div style="float: right; margin-right: 10px;">
-                <a href="">
-                    <h2>메뉴1</h2>
-                </a>
-                <a href="">
-                    <h2>메뉴2</h2>
-                </a>
-            </div>
-        </div>
-        <div class="section1">
-            <figure style="float: left; margin-left: 50px;">
-                <img src="img1.gif" alt="">
-                <figcaption>옴뇸뇸</figcaption>
-            </figure>
-            <figure style="float: right; margin-right: 50px;">
-                <img src="img2.gif" alt="">
-                <figcaption>오모오모</figcaption>
-            </figure>
-            <p style="clear: both; padding-top: 10px;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, deserunt minus! Sapiente sit
-                consequatur debitis ex, officiis odit nostrum quaerat repudiandae ad nesciunt est ea nobis quisquam
-                dolorum amet vero.
-            </p>
-        </div>
-        <div class="section2">
-            <table>
-                <caption style="margin-bottom: 10px; font-size: 24px;">
-                    테이블
-                </caption>
-                <thead>
-                    <tr>
-                        <th>제목1</th>
-                        <th>제목2</th>
-                        <th>제목3</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>내용1-1</td>
-                        <td>내용1-2</td>
-                        <td>내용1-3</td>
-                    </tr>
-                    <tr>
-                        <td>내용1-1</td>
-                        <td>내용2-2</td>
-                        <td>내용2-3</td>
-                    </tr>
-                    <tr>
-                        <td>내용3-1</td>
-                        <td>내용3-2</td>
-                        <td>내용3-3</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="footer">
-            CopyRight 차진영
-        </div>
-    </div>
+    <form action="">
+        <h1>여러과목을 선택할 수 있습니다.</h1>
+        <input type="text" name="" id="" placeholder="아이디">
+        <input type="password" name="" id="" placeholder="비밀번호">
+        <select name="" id="" multiple>
+            <option value="">국어</option>
+            <option value="">영어</option>
+            <option value="">수학</option>
+        </select>
+        <input type="number" name="" id="num1">
+        <input type="number" name="" id="num2">
+        <button>전송</button>
+        <button type="reset">리셋</button>
+        <button onclick="aaa()" type="button">그냥버튼...</button>
+    </form>
 </body>
 
 </html>

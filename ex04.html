@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a1:checked~ul>li:nth-child(1) {
+            text-decoration: line-through;
+        }
+
+        #a2:checked~ul>li:nth-child(2) {
+            text-decoration: line-through;
+        }
+
+        #a3:checked~ul>li:nth-child(3) {
+            text-decoration: line-through;
+        }
+
+        p {
+            text-shadow: 1px 1px 0 black;
+        }
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>체크하면 라인쓰로우 들어가기</h1>
+    <div>
+        <input type="radio" name="aa" id="a1" checked>
+        <input type="radio" name="aa" id="a2">
+        <input type="radio" name="aa" id="a3">
+        <ul>
+            <li>공부</li>
+            <li>운동</li>
+            <li>영화</li>
+        </ul>
+        <p>
+            text
+        </p>
+        <table>
+            <tr>
+                <td style="white-space: nowrap; width: 200px; overflow: hidden; text-overflow: ellipsis;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora similique esse nemo soluta?
+                    Pariatur aspernatur error dolore beatae, eligendi, optio molestias, eius doloremque magnam facere
+                    temporibus facilis exercitationem ipsa possimus?</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
